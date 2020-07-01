@@ -32,16 +32,16 @@ echo "\n".color("nevy","?] Mau Redeem Voucher?: y/n ");
 $pilihan = trim(fgets(STDIN));
 if($pilihan == "y" || $pilihan == "Y"){
 echo color("red","===========(REDEEM VOUCHER)===========");
-$data = request('/go-promotions/v1/promotions/enrolment", $token, $data);{"promo_code":"PAKEGOFOOD0906"}');
-$claim = fetch_value($boba09,'"message":"','"');
+$data = '{"/go-promotions/v1/promotions/enrolment", $token, $data);{"promo_code":"PAKEGOFOOD0906"}';
+$claim = request($boba09,'"message":"','"');
 message = fetch_value($claim,'"message":"','"');
 if(strpos($claim, 'Promo kamu sudah bisa dipakai')){
-$data= request('/go-promotions/v1/promotions/enrolment", $token, $data);{"promo_code":"COBAGOFOOD2206"}');
-$claim = fetch_value($claim1,'"message":"','"');
+$data = '{/go-promotions/v1/promotions/enrolment", $token, $data);{"promo_code":"COBAGOFOOD2206"}';
+$claim = request($claim1,'"message":"','"');
 message = fetch_value($claim,'"message":"','"');
 if(strpos($claim, 'Promo kamu sudah bisa dipakai')){
-$data = request('/go-promotions/v1/promotions/enrolment", $token, $data);{"promo_code":"PESANGOFOOD2206"}');
-$claim = fetch_value($claim1,'"message":"','"');
+$data = '{/go-promotions/v1/promotions/enrolment", $token, $data);{"promo_code":"PESANGOFOOD2206"}';
+$claim = request($claim1,'"message":"','"');
 message = fetch_value($claim,'"message":"','"');
 if(strpos($claim, 'Promo kamu sudah bisa dipakai')){
 reff:
