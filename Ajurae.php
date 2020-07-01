@@ -121,3 +121,12 @@ echo color("red","NOMOR SAlAH COK !!!");
 echo "\nMau ulang? (y/n): ";
 $pilih = trim(fgets(STDIN));
 if($pilih == "y" || $pilih == "Y"){
+echo "\n==============Register==============\n";
+goto ulang;
+}else{
+echo "\n==============Register==============\n";
+goto ulang;
+}
+}
+}
+echo change()."\n"; ?>
